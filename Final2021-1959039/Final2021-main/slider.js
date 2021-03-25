@@ -39,7 +39,7 @@ function outputProducts(productList) {
 		let url = productList[index].image;
 
 		let data = `
-		<div class="item">
+		<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			 <div class="card">
 				<img class="product-img" width='100px' height='100px' src="${url}">
 				<div class="card-body">
@@ -50,6 +50,6 @@ function outputProducts(productList) {
 		</div>
 		`;
 
-		$(".owl-carousel.owl-theme.product-slider").append(data);
+		$(".product").append(data);
 	}
 }
